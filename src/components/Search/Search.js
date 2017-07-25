@@ -5,6 +5,7 @@ import {
   SearchBox
 } from 'react-instantsearch/dom'
 
+import Map from '../Map'
 import Result from '../Result'
 
 export default class Search extends Component {
@@ -15,6 +16,7 @@ export default class Search extends Component {
         apiKey='7c1a04b39c9c1324a97b2b6ad0431b52'
         indexName='Mental Health Services'
       >
+        <Map />
         <SearchBox />
         <Hits hitComponent={Result} />
       </InstantSearch>
